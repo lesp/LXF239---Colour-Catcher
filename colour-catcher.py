@@ -1,4 +1,5 @@
-import envirophat, time
+import envirophat
+import time
 import unicornhat as unicorn
 
 unicorn.set_layout(unicorn.PHAT)
@@ -16,7 +17,8 @@ while True:
                 b = 0
                 unicorn.set_pixel(x,y,(color))
         unicorn.show()
-        time.sleep(1)
+        time.sleep(0.1)
     except KeyboardInterrupt:
         print("EXIT")
+        envirophat.leds.off()
         break
