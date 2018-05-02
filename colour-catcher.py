@@ -12,9 +12,6 @@ while True:
         color = (envirophat.light.rgb())
         for y in range(4):
             for x in range(8):
-                r = 128
-                g = 0
-                b = 0
                 unicorn.set_pixel(x,y,(color))
         unicorn.show()
         time.sleep(0.1)
